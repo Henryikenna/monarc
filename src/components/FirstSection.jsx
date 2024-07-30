@@ -10,7 +10,7 @@ const FirstSection = () => {
     <div id="home" ref={homeRef} className="homeHeader flex flex-col px-[100px] pt-10">
       <section className="flex items-center justify-between">
         <span className=" flex items-end gap-[9.7px]">
-          <img className="w-[42.5px]" src="./src/assets/logo.svg" alt="" />
+          <img className="w-[42.5px]" src="/src/assets/logo.svg" alt="" />
           <h4 className="text-white font-semibold font-lufga text-xl">
             Monarc
           </h4>
