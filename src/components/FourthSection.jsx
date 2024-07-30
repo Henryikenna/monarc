@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ScrollContext from './ScrollContext';
+import chartImage from "../assets/chartImage.png";
 
 const FourthSection = () => {
     const { growthRef } = useContext(ScrollContext);
@@ -8,7 +9,7 @@ const FourthSection = () => {
   return (
     <div id='growth' ref={growthRef} className="fourthSection flex items-center gap-[6.25rem] px-[100px]">
       <section className="w-1/2">
-        <img src="./src/assets/chartImage.png" alt="" className="" />
+        <img src={chartImage} alt="" className="" />
       </section>
 
       <section className="w-1/2 flex flex-col gap-6">

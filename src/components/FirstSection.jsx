@@ -1,5 +1,12 @@
 import React, { useContext } from "react";
 import ScrollContext from "./ScrollContext";
+import logo from "../assets/logo.svg";
+import barCircleIcon from "../assets/barCircleIcon.svg";
+import solanaCircleIcon from "../assets/solanaCircleIcon.svg";
+import linksCircleIcon from "../assets/linksCircleIcon.svg";
+import thousandxCircleIcon from "../assets/1000xCircleIcon.svg";
+import ethereumCircleIcon from "../assets/ethereumCircleIcon.svg";
+import downArrow from "../assets/down_arrow.svg";
 
 const FirstSection = () => {
   const { activeSection, handleScroll } = useContext(ScrollContext);
@@ -10,7 +17,7 @@ const FirstSection = () => {
     <div id="home" ref={homeRef} className="homeHeader flex flex-col px-[100px] pt-10">
       <section className="flex items-center justify-between">
         <span className=" flex items-end gap-[9.7px]">
-          <img className="w-[42.5px]" src="/src/assets/logo.svg" alt="" />
+          <img className="w-[42.5px]" src={logo} alt="" />
           <h4 className="text-white font-semibold font-lufga text-xl">
             Monarc
           </h4>
@@ -94,33 +101,33 @@ const FirstSection = () => {
           <div className="icons">
             <img
               className="absolute top-64 left-36"
-              src="./src/assets/barCircleIcon.svg"
+              src={barCircleIcon}
               alt="icon1"
             />
             <img
               className="absolute top-[36rem] left-[17rem]"
-              src="./src/assets/solanaCircleIcon.svg"
+              src={solanaCircleIcon}
               alt="icon2"
             />
             <img
               className="absolute top-[42rem] right-[28rem]"
-              src="./src/assets/linksCircleIcon.svg"
+              src={linksCircleIcon}
               alt="icon3"
             />
             <img
               className="absolute top-[32rem] right-[15rem]"
-              src="./src/assets/1000xCircleIcon.svg"
+              src={thousandxCircleIcon}
               alt="icon4"
             />
             <img
               className="absolute top-40 right-52"
-              src="./src/assets/ethereumCircleIcon.svg"
+              src={ethereumCircleIcon}
               alt="icon5"
             />
           </div>
           <img
             className="absolute bottom-2 right-16"
-            src="./src/assets/down_arrow.svg"
+            src={downArrow}
             alt=""
           />
         </div>

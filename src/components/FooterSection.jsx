@@ -1,11 +1,12 @@
 import React from "react";
+import logo from "../assets/logo.svg";
 
 const FooterSection = () => {
   return (
     <footer className="footerSection flex flex-col justify-end">
       <div className="flex justify-between px-[100px]">
         <span className=" flex items-start gap-[11.37px]">
-          <img className="w-[49.7px]" src="./src/assets/logo.svg" alt="" />
+          <img className="w-[49.7px]" src={logo} alt="" />
           <h4 className="text-white font-semibold font-lufga text-[1.9rem]">
             Monarc
           </h4>

@@ -1,4 +1,5 @@
 import React from 'react'
+import phoneMockup from "../assets/phone_mockup2.png";
 
 const ThirdSection = () => {
   return (
@@ -31,7 +32,7 @@ const ThirdSection = () => {
             </section>
 
             <section className="w-1/2 flex items-end justify-end pr-16">
-              <img src="./src/assets/phone_mockup2.png" alt="" className="h-[50%]" />
+              <img src={phoneMockup} alt="" className="h-[50%]" />
             </section>
           </div>
         </section>
